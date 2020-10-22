@@ -23,7 +23,7 @@ pipeline {
 
                 git url: 'https://github.com/frontalnh/temp.git',
                     branch: 'master',
-                    credentialsId: 'jenkinsgit'
+                    credentialsId: 'gitAccessKey'
             }
 
             post {
