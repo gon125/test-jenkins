@@ -19,14 +19,13 @@ pipeline {
             agent any
             
             steps {
-                echo "Lets start Long Journey! ENV: ${ENV}"
                 echo 'Clonning Repository'
 
                 git url: 'https://github.com/frontalnh/temp.git',
                     branch: 'master',
                     credentialsId: 'jenkinsgit'
             }
-            
+
             post {
                 // If Maven was able to run the tests, even if some of the test
                 // failed, record the test results and archive the jar file.
