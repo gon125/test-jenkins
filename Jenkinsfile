@@ -34,14 +34,6 @@ pipeline {
                     echo 'Successfully Cloned Repository'
                 }
             }
-
-            always {
-                echo "i tried.."
-            }
-
-            cleanup {
-              echo "after all other post condition"
-            }
         }
         
         // aws s3 에 파일을 올림
